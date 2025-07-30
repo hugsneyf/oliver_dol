@@ -1,0 +1,929 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster+Two:wght@700&family=Tsukimi+Rounded:wght@600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: nome;
+  box-sizing: border-box;
+}
+
+/* ---------------------------------------------------------------------------------------- Navegation bar */
+main {
+  background-color: #fbe9f8;
+}
+
+.logo {
+  width: 120px;
+  height: 100px;
+  margin: 0.5rem 0 0 4rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.logo:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+}
+
+header .container {
+  background: url("../images/dol_rose-gold-satin_background.jpg");
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  padding-right: 4.5rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+}
+
+.navbar_link {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.navbar_link a {
+  text-decoration: none;
+  text-shadow: 0.5px 0.5px 1.5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  display: block;
+  padding: 0.8rem 1rem;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+nav .navbar_link a:after {
+  content: "";
+  background: #D96F32;
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: 0.2rem;
+  transition: all 0.3s ease 0s;
+}
+
+nav .navbar_link a:hover {
+  color: #C75D2C;
+  text-decoration: none;
+}
+
+nav .navbar_link a:hover:after {
+  width: 100%;
+}
+
+nav .navbar_link a:focus {
+  color: #C75D2C;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-1 {
+  display: none;
+  margin-right: 15px;
+  width: 100px;
+  height: 45px;
+  border: solid #144a35 2px;
+  border-radius: 7px;
+  background-color: transparent;
+  box-shadow: inset 0.5px 0.5px 0.5px #79098f;
+  letter-spacing: 1.2px;
+  transition: ease-out 0.2s;
+  outline: none;
+}
+
+.btn-1:hover {
+  box-shadow: inset 100px 0 0 0 #79098f;
+  color: #f9cfa3;
+  cursor: pointer;
+}
+
+nav .navbar_link a,
+.btn-1,
+.sidebar_button a {
+  font-family: sans-serif, Arial, Helvetica;
+  color: #144a35;
+  font-weight: bolder !important;
+}
+
+/* ---------------------------------------------------------------------------------------- Introduction to Rio city */
+.intro {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro > #aesthetic_clinic {
+
+/* .intro > #welcome_rio { */
+  position: absolute;
+  top: 0;
+  color: 641B2E;
+  margin: 2.5rem 0 0 1rem;
+  font-family: "arial", sans-serif, arial;
+  font-size: 5rem;
+  letter-spacing: 1.3px;
+  font-weight: 1000;
+  text-shadow: 2px 2px 2px rgb(190, 91, 80);
+  line-height: 1.7rem;
+}
+
+.sep_container {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.separator {
+  width: 30%;
+  height: 7px;
+  background: url("../images/dol_rose-gold-satin_background.jpg");
+  border-radius: 9999px;
+  border: none;
+}
+
+figure {
+  font-size: 8px;
+  letter-spacing: 1px !important;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 3px;
+}
+
+/* -------------------------------------------------------------------------------------------------- font size*/
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  font-weight: 500;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.f1 {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  color: black;
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1.2px;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.history h2 {
+  margin: 30px 35px;
+}
+
+.general_content {
+  font-family: sans-serif, Arial, Helvetica;
+  letter-spacing: 1.02px;
+}
+
+/* ---------------------------------------------------------------------------------------------- Review section */
+section > .subtitle_review {
+  padding: 0 0 25px 0;
+}
+
+.main_container {
+  padding: 15px;
+}
+
+.review {
+  width: 100%;
+  display: flex;
+  border: 2px solid rgb(242, 118, 40);
+  padding: 0 0 10px 5px;
+  margin-bottom: 10px;
+}
+.review .person-img {
+  width: 350px;
+  margin: 12px 0 0 12px;
+  height: 350px;
+  border-radius: 50%;
+  border: 2px solid rgb(242, 118, 40);
+}
+
+.star-row img {
+  width: 26px;
+  height: 26px;
+  margin: 10px 0 5px 0;
+  border: 1px solid rgb(242, 118, 40);
+}
+
+.review_box {
+  flex-direction: column;
+  margin: 10px;
+}
+
+/* ---------------------------------------------------------------------------------------- Places to travel */
+
+.subtitle {
+  margin-left: 3.2rem;
+  margin-bottom: -15px;
+  display: flex;
+  align-items: center;
+  width: 270px;
+  height: 90px;
+}
+
+.subtitle img {
+  max-width: 100%;
+  height: auto;
+  width: 38px;
+  height: 38px;
+  margin-left: 15px;
+}
+
+.place_page > .container_places {
+  margin-top: 20px;
+}
+
+.container_places {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  min-width: 300px;
+  margin: 15px 5px 15px 5px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+  border: 2px solid rgb(242, 118, 40);
+}
+
+.card > img {
+  display: flex;
+  align-self: center;
+  max-width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  margin: 15px 0;
+}
+
+.review:hover,
+.card:hover,
+.info_box:hover {
+  transform: scale(1.01);
+  transition: transform 0.3s ease;
+  border: 3px solid rgb(242, 118, 40);
+}
+
+/* ---------------------------------------------------------------------------------------- Transport page */
+
+.transport_page {
+  display: flex;
+  width: 100%;
+}
+
+.transport_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.info_transport {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-content: center;
+  margin-top: 15px;
+}
+
+.transport_content h2 {
+  padding: 23px 0 15px 19px;
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+.info_box {
+  min-width: 410px;
+  margin: 15px;
+  flex: 1;
+  display: flex;
+  border: 2px solid rgb(242, 118, 40);
+}
+
+.info_content {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.info_content h3 {
+  padding-bottom: 20px;
+}
+
+.transport_photo {
+  margin: 60px 7px 7px 0;
+  box-shadow: -0.5px -0.5px 4.5px rgba(0, 0, 0, 0.5);
+}
+
+.info_box img {
+  display: flex;
+  width: 150px;
+  height: 214px;
+  object-fit: cover;
+  border-radius: 4.5dvb;
+}
+
+/* -------------------------------------------------------------------------------------------------- SIDE BAR*/
+.transport_page aside {
+  max-width: 250px;
+  padding: 2px;
+  background: url("../images/side_sunsire_color.jpg");
+}
+
+.sidebar_menu h3 {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  color: #144a35;
+  font-weight: 900;
+  padding: 25px 20px 18px 20px;
+  text-shadow: 1px 1px 4px rgb(244, 242, 198);
+}
+
+.sidebar_menu h3:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.sidebar_menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar_menu .sidebar_button {
+  list-style: none;
+  padding: 70px 0;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sidebar_menu .sidebar_button a {
+  text-decoration: none;
+  color: black;
+  padding: 0 1rem;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.sidebar_button {
+  display: flex;
+  width: 99%;
+  flex: 1;
+  align-items: center;
+  padding: 15px;
+  margin: 10px 0;
+  border: solid #144a35 2px;
+  background-color: transparent;
+  box-shadow: inset 0.5px 0.5px 0.5px #ae8d0c;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.sidebar_button:hover {
+  box-shadow: inset 245px 0 0 0 #f1eaa7;
+  color: #f9cfa3;
+  cursor: pointer;
+}
+
+.sidebar_button > img {
+  display: flex;
+  align-self: flex-start;
+  max-width: 28px;
+  height: 30px;
+  object-fit: cover;
+  margin: 0 -2px;
+}
+
+.btn-1:hover {
+  box-shadow: inset 100px 0 0 0 #79098f;
+  color: #f9cfa3;
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------------------------------  Travel Tips*/
+
+.tips_icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 40px 15px 40px;
+}
+
+.tips_icons img {
+  width: 5.5%;
+  height: 5.5%;
+  transition: all 0.3s ease-in-out;
+}
+
+.tips_icons img:hover {
+  transform: scale(1.1);
+}
+
+.tips_intro {
+  padding: 15px 25px;
+}
+
+.tips_intro h1 {
+  padding-bottom: 20px;
+}
+
+.tips_intro h3 {
+  padding-bottom: 20px;
+}
+
+.tips_block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tips_topics {
+  display: flex;
+  border: 2px solid rgb(242, 118, 40);
+  margin: 5px 7px 10px 7px;
+}
+
+.tips_topics h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid rgb(242, 118, 40);
+  min-width: 120px;
+}
+.tips_block .f1 {
+  padding: 5px 15px 5px 5px;
+}
+
+.tips_content .nice_trip {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 0 15px 0;
+  font-family: "Indie Flower", sans-serif, arial;
+  margin: 15px 15px 0 0;
+}
+
+.nice_trip p {
+  padding-top: 5px;
+}
+
+/* -------------------------------------------------------------------------------------------------------- FOOTER */
+footer {
+  background: url("../images/dol_rose-gold-satin_background.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_footer {
+  padding: 5px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer_bar .footer_links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.footer_bar {
+  display: flex;
+  flex: 1;
+}
+
+.subset {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.subset a {
+  text-decoration: none;
+  padding: 1rem 1rem;
+  font-family: "Courier New", Courier, monospace;
+  color: #144a35;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  letter-spacing: 0.7px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.subset a:hover {
+  color: #79098f;
+  transition: all 0.3s ease 0s;
+}
+
+.separator_footer {
+  width: 90%;
+  height: 2px;
+  margin-bottom: 15px;
+  background-color: #f2ead3;
+  border-radius: 9999px;
+  border: none;
+}
+
+.container_footer > p:hover {
+  cursor: pointer;
+}
+
+#country_Uk {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.rights {
+  padding: 0 0 10px 0;
+  cursor: pointer;
+}
+
+.rights_img a {
+  text-decoration: none;
+  text-shadow: 0.2px 0.2px black;
+  color: black;
+}
+
+.rights_img {
+  margin: 5px 0;
+}
+
+.rights_img > a:hover {
+  color: rgb(205, 23, 23);
+  border-bottom: 1px solid rgb(205, 23, 23);
+}
+
+@media (max-width: 1080px) {
+  .info_box img {
+    height: 150px;
+  }
+
+  h2,
+  h3 {
+    font-size: 15px !important;
+  }
+
+  .f1 {
+    font-size: 13.5px;
+    line-height: 1.3rem;
+  }
+
+  .history > h2 {
+    font-size: 14px;
+  }
+
+  .intro > #aesthetic_clinic {
+
+
+  /* .intro > #welcome_rio {  */
+  
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 1px rgba(247, 243, 123, 0.913);
+  }
+
+  section > .subtitle_review {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------- MEDIO SCREEN_2 */
+
+@media (max-width: 850px) {
+  .responsive_nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+  .logo {
+    margin-left: 1.7rem;
+  }
+
+  .btn-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 2.5rem;
+    font-size: 1.2rem;
+  }
+
+  .review {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review img {
+    align-self: center;
+  }
+
+  .review .person-img {
+    order: 2;
+    height: 250px;
+    width: 250px;
+    margin: 0;
+  }
+
+  .review_box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review_box .star-row {
+    order: 2;
+    border-bottom: 1.5px #333 dashed;
+  }
+
+  .review_box h3 {
+    border-bottom: solid 1px black;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  nav {
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    border-top: 1px solid #f2ead3;
+  }
+
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  nav .navbar_link a {
+    font-size: 1.5rem;
+  }
+
+  nav .navbar_link {
+    text-shadow: 1px 1px 1px rgba(247, 247, 247, 0.5);
+    text-align: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  nav .navbar_link a:after {
+    background: none;
+    height: 0;
+  }
+
+  nav .navbar_link a:hover {
+    background-color: rgba(234, 230, 230, 0.15);
+    width: 100%;
+    color: #79098f;
+    transition: all 0.3s ease 0s;
+    padding: 7px;
+  }
+
+  nav .navbar_link a:hover:after {
+    width: max-content;
+  }
+
+  /* -------------------------------------------------------------------------------------- footer responsive*/
+  .subset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .container_footer {
+    font-size: 14px;
+  }
+  .container_footer p {
+    text-shadow: 1px 1px 1px rgba(247, 243, 123, 0.913);
+  }
+
+  .sub_resp_left {
+    width: 100%;
+    padding-left: 30px;
+  }
+
+  .subset a {
+    display: flex;
+    justify-content: center;
+  }
+  .sub_resp_right {
+    width: 100%;
+    padding-right: 30px;
+  }
+
+  h2,
+  h3 {
+    font-size: 14px !important;
+  }
+
+  .history > h2 {
+    line-height: 1.7rem;
+    margin: 20px;
+    font-weight: 500;
+  }
+
+  section > .subtitle_review {
+    display: flex;
+    justify-content: center;
+  }
+
+  .subtitle img {
+    width: 26px;
+    height: 26px;
+    margin-left: 7px;
+  }
+
+  .subtitle {
+    width: 100%;
+    margin: 0;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+  }
+  /* ---------------------------------------------------------------------------------------- side bar */
+
+  .sidebar_menu h3 {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 4px rgb(244, 242, 198);
+    letter-spacing: 0.2px;
+    padding: 15px;
+  }
+
+  .sidebar_menu .sidebar_button {
+    padding: 40px 0;
+    padding-left: 6px;
+  }
+
+  .sidebar_menu .sidebar_button a {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px rgba(247, 247, 247, 0.5);
+    padding: 0;
+  }
+
+  .sidebar_button > img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin: 7px;
+  }
+  .transport_content h2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 0 0 0;
+  }
+
+  .info_box {
+    height: auto;
+  }
+
+  .tips_content .nice_trip {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  figure {
+    font-size: 6px;
+  }
+
+}
+
+/* ---------------------------------------------------------------------------------------- SMALL SCREEN */
+@media (max-width: 520px) {
+  .star-row img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .subtitle img {
+    width: 26px;
+    height: 26px;
+    margin-left: 7px;
+  }
+
+  article > h3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info_box {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    min-width: 250px;
+    margin: 10px;
+    margin-bottom: 10px;
+  }
+
+  .info_box img {
+    margin: 15px 0 3px 0;
+    min-width: 185px;
+    max-height: 120px;
+  }
+
+  .tips_topics {
+    flex-direction: column;
+  }
+
+  .tips_icons img {
+    width: 7.5%;
+    height: 7.5%;
+  }
+  .tips_topics h3 {
+    border-bottom: 2px solid rgb(242, 118, 40);
+    background-color: #f7ece3ee;
+    border-right: none;
+    padding: 10px 0;
+  }
+
+  .info_content {
+    padding-top: 0;
+  }
+  .info_content h3 {
+    padding-bottom: 10px;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------- Mobile */
+@media (max-width: 400px) {
+  nav .navbar_link a {
+    font-size: 1.1rem;
+  }
+
+  .star-row img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .sidebar_menu h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgb(244, 242, 198);
+    letter-spacing: 0.1px;
+    padding: 2px 7px 0 5px;
+  }
+
+  .sidebar_menu li {
+    padding: 30px 0;
+  }
+
+  .sidebar_menu li a {
+    font-size: 14px;
+    text-shadow: 1px 1px 1px rgba(247, 247, 247, 0.5);
+  }
+
+  .sidebar_button > img {
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+  }
+
+  .transport_page aside {
+    width: 104px;
+  }
+  .info_box {
+    min-width: 130px;
+  }
+}
